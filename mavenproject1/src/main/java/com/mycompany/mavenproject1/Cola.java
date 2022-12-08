@@ -9,5 +9,17 @@ package com.mycompany.mavenproject1;
  * @author jarma
  */
 public class Cola {
+    public int nodo;
+    
+ //   public void eliminar(String) {
+
+   //     while (true) {
+         //   if (this.colas.contains(n) == true) {
+         //       this.colas.remove(n);
+         //   } else {
+         //       break;
+         //   }
+    
+
     
 }
