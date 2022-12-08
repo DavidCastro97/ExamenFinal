@@ -6,7 +6,8 @@ import javax.swing.JOptionPane;
 public class IngresaUsuario {
     private NodoC frente;
     private NodoC ultimo;
-    
+    private int largo;
+    Usuario Usa2 = new Usuario(null,null,0,null,0,0,0);
      public IngresaUsuario() {
                  
     }
@@ -20,13 +21,51 @@ public class IngresaUsuario {
             ultimo=d;
         }
     }
+    public boolean Vacia(){ return frente == null;}
+
+    //Metodo para siguiente
+    public void pop(){
+        if (!Vacia()) {
+           
+            this.frente = this.frente.getAtras();
+       
+            this.largo--;
+        }
+    }
     
     public NodoC MostrarCola(){
-        NodoC aux = frente;
-        if(frente!=null){
-            frente=frente.getAtras();
-            aux.setAtras(null);
-        }
-        return aux;
-    }
+        //Creamos una variable auxiliar que nos irá recorriendo la cola
+        NodoC aux = frente; 
+        //Creamos una variable auxiliar que nos guarda la cima 
+        NodoC aux2 = frente; 
+        JOptionPane.showMessageDialog(null,"Lista de los usuarios");
+        while(aux != null){
+           JOptionPane.showInputDialog(
+                                  "Datos del usuario registrado\n"
+                             + "Nombre y apellidos: \n"+Usa2.getNombre()
+                                          +Usa2.getApellidos()
+                             + "Cedula: \n"+Usa2.getCedula()
+                             + "Correo: \n"+Usa2.getCorreo()
+                             + "Telefono de emergencia: \n"+Usa2.getTelefEmer()
+                             + "Edad: \n"+Usa2.getEdad()
+                             + "Numero de vuelo: \n"+Usa2.getNumVuelo());
+           
+            if(aux.getAtras()!= null){ 
+                aux = aux.getAtras();
+            }
+            else{
+            aux = null;
+            }
+            }
+        
+ 
+    
 }
+}
+
+
+
+
+        
+    
+

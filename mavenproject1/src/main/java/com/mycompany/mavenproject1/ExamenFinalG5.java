@@ -11,7 +11,7 @@ public class ExamenFinalG5 {
         int option = 0;
         while (option != 6){
             
-            
+            //Menu para mostrar todas las opciones disponibles
             option = Integer.parseInt(JOptionPane.showInputDialog(
                                   "Bienvenido a Lafsa escoja una opcion:\n"
                                    + "1. Comprar boletos\n"
@@ -22,7 +22,7 @@ public class ExamenFinalG5 {
                                    + "5. Observar la lista de las maletas\n"));
             
             switch(option) {
-                case 1:
+                case 1://Se le pregunta los datos al usuario y los agrega
                 c.setNombre(JOptionPane.showInputDialog
                                                 ("Ingrese su Nombre\n"));
                    
@@ -42,10 +42,9 @@ public class ExamenFinalG5 {
                    
                    c.setNumVuelo(Integer.parseInt(JOptionPane.showInputDialog
                                                 ("Ingrese su Cedula\n")));
-                   Usa.encola(d);
                     break;
                 case 2:
-           
+                    Usa.MostrarCola();
                         
                     break;
                 case 3:
