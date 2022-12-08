@@ -1,13 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.mavenproject1;
 
-/**
- *
- * @author nahum
- */
 public class NodoC {
+    private String Usuario;
+    private NodoC atras;
+
+    public NodoC(String Usuario, NodoC atras) {
+        this.Usuario = Usuario;
+        this.atras = atras;
+    }
+
+    NodoC(String usuario) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public String getUsuario() {
+        return Usuario;
+    }
+
+    public void setUsuario(String Usuario) {
+        this.Usuario = Usuario;
+    }
+
+    public NodoC getAtras() {
+        return atras;
+    }
+
+    public void setAtras(NodoC atras) {
+        this.atras = atras;
+    }
+
+    @Override
+    public String toString() {
+        return "NodoC{" + "Usuario=" + Usuario + ", atras=" + atras + '}';
+    }
     
 }
+
