@@ -7,7 +7,7 @@ public class IngresaUsuario {
     private NodoC frente;
     private NodoC ultimo;
     private int largo;
-    Usuario Usa2 = new Usuario(null,null,0,null,0,0,0);
+    Usuario Usa2 = new Usuario();
      public IngresaUsuario() {
                  
     }
@@ -40,7 +40,7 @@ public class IngresaUsuario {
         NodoC aux2 = frente; 
         JOptionPane.showMessageDialog(null,"Lista de los usuarios");
         while(aux != null){
-           JOptionPane.showInputDialog(
+           JOptionPane.showInputDialog( //Muestra los datos en la cola
                                   "Datos del usuario registrado\n"
                              + "Nombre y apellidos: \n"+Usa2.getNombre()
                                           +Usa2.getApellidos()
@@ -57,10 +57,18 @@ public class IngresaUsuario {
             aux = null;
             }
             }
-        
- 
-    
+        return null;
 }
+     @Override
+    public String toString(){
+        String s="";
+        NodoC aux=frente;
+        while(aux!=null){
+            s+=aux+"\n";
+            aux=aux.getAtras();
+        }
+        return s;
+    }
 }
 
 

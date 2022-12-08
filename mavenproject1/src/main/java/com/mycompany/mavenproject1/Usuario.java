@@ -9,16 +9,6 @@ public class Usuario {
     private int edad;
     private double NumVuelo;
 
-    public Usuario(String Nombre, String Apellidos, int Cedula, String Correo, 
-            int TelefEmer, int edad, double NumVuelo) {
-        this.Nombre = Nombre;
-        this.Apellidos = Apellidos;
-        this.Cedula = Cedula;
-        this.Correo = Correo;
-        this.TelefEmer = TelefEmer;
-        this.edad = edad;
-        this.NumVuelo = NumVuelo;
-    }
     public String getNombre() {
         return Nombre;
     }
