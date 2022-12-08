@@ -13,9 +13,11 @@ public class Cola {
     public int cima;
     public int largo;
     
-    
+    //Metodo para comprobar el estado de la cima
     public boolean Vacia(){ return cima == null;}
     
+    
+    //Metodo para eliminar la cima 
   public void pop(){
         if (!Vacia()) {
            
