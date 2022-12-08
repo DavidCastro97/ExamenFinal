@@ -9,7 +9,7 @@ package com.mycompany.mavenproject1;
  * @author jose siles 
  */
 public class Cola {
-    public int nodo;
+    public int Nodo;
     public int cima;
     public int largo;
     
@@ -30,4 +30,13 @@ public class Cola {
         }
         }
     }
+  
+    //Metodo para imprimir los datos 
+        public void imprimir(){
+        Nodo aux=cima;
+            while(aux!=null){
+            System.out.println(aux);
+            aux=aux.getSiguiente();
+            }
+        }
 }
