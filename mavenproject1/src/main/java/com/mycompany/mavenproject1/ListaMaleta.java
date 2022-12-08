@@ -15,7 +15,7 @@ public class ListaMaleta {
             cabeza = new NodoM(maleta);
 
         } else if (maleta.getSuma()% 2 == 0) {
-            //Si es mayor que la cabeza, se reemplaza por la cabeza
+            //Si es par, se reemplaza por la cabeza
 
             NodoM aux = new NodoM(maleta);
             aux.setNext2(cabeza.getNext2());
@@ -30,7 +30,6 @@ public class ListaMaleta {
             NodoM aux = cabeza;
             boolean flag = false;
             while (flag == false) {
-
                 //mientras flag sea falsa, recorre la lista hasta encontrar 
                 // el nodo que conecta con nulo
                 //Luego agrega la maleta al final de la lista

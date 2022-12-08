@@ -9,9 +9,8 @@ public class NodoM {
         this.maleta = maleta;
     }
 
-    NodoM(Maleta maleta) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+   
+    
 
     public Maleta getMaleta() {
         return maleta;
