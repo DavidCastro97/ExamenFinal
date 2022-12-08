@@ -6,7 +6,7 @@ package com.mycompany.mavenproject1;
 
 /**
  *
- * @author jarma
+ * @author jose siles
  */
 public class Cola {
     public int nodo;
