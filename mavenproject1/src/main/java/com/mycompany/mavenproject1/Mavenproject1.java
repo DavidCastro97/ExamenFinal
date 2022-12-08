@@ -5,6 +5,8 @@
 
 package com.mycompany.mavenproject1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author nahum
@@ -12,6 +14,29 @@ package com.mycompany.mavenproject1;
 public class Mavenproject1 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int option = 0;
+        while (option != 6){
+            
+            option = Integer.parseInt(JOptionPane.showInputDialog(
+                                                                 "Type your option:\n"
+                                                               + "1. Crear Empleado\n"
+                                                               + "2. Crear sensores\n"
+                                                               + "3. Crear producto\n"
+                                                               + "4. Mostrar Sensores y encargado\n"));
+            
+            switch(option) {
+                case 1:
+
+                    break;
+                case 2:
+           
+                        
+                    break;
+                case 3:
+                  
+                    break;
+                case 4:
+                 
+                    break;
     }
 }
