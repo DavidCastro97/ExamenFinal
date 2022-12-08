@@ -10,16 +10,22 @@ package com.mycompany.mavenproject1;
  */
 public class Cola {
     public int nodo;
+    public int cima;
+    public int largo;
     
- //   public void eliminar(String) {
-
-   //     while (true) {
-         //   if (this.colas.contains(n) == true) {
-         //       this.colas.remove(n);
-         //   } else {
-         //       break;
-         //   }
     
-//h
+    public boolean Vacia(){ return cima == null;}
     
+  public void pop(){
+        if (!Vacia()) {
+           
+            this.cima = this.cima.getSiguiente();
+       
+            this.largo--;
+            
+              else{
+            System.out.println("El nodo indicado no existe");
+        }
+        }
+    }
 }
